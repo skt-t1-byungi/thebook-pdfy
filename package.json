@@ -1,0 +1,21 @@
+{
+    "name": "thebook-pdfy",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "ava"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.3",
+        "httpie": "^1.1.2"
+    },
+    "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-byungi": "^0.2.9"
+    },
+    "eslintConfig": {
+        "extends": "byungi"
+    }
+}
