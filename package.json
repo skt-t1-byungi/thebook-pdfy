@@ -8,7 +8,9 @@
     },
     "dependencies": {
         "cheerio": "^1.0.0-rc.3",
-        "httpie": "^1.1.2"
+        "chrome-finder": "^1.0.5",
+        "httpie": "^1.1.2",
+        "puppeteer-core": "^1.17.0"
     },
     "devDependencies": {
         "ava": "^1.4.1",
