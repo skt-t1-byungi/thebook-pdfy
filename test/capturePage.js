@@ -1,16 +1,21 @@
 const test = require('ava')
-const os = require('os')
-const path = require('path')
 const fs = require('fs')
 const capturePage = require('../lib/capturePage')
 
-const TEMP_DEST = path.join(os.tmpdir(), '__tmp_captured_image.jpg')
+const imgs = []
+const m = async pathUrl => {
+    const img = await capturePage(pathUrl)
+    imgs.push(img)
+    return img
+}
+
+const noop = () => {}
+test.after.always(() => imgs.forEach(img => fs.unlink(img.path, noop)))
 
 test('capturePage', async t => {
-    t.false(fs.existsSync(TEMP_DEST))
-    await capturePage('/006962/ch01/01/', TEMP_DEST)
-    t.true(fs.existsSync(TEMP_DEST))
+    const img = await m('/006962/ch01/01/')
+    // t.log(img)
+    t.true(fs.existsSync(img.path))
+    // fs.copyFileSync(img.path, './test.jpg')
     t.pass()
 })
-
-test.after.always(() => fs.unlinkSync(TEMP_DEST))
