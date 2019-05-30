@@ -14,5 +14,5 @@ test('bundle', async t => {
     t.false(fs.existsSync(DEST))
     await bundle({ pages: IMGS, cover: COVER }, DEST)
     t.true(fs.existsSync(DEST))
-    // fs.copyFileSync(DEST, './test.pdf')
+    fs.copyFileSync(DEST, './examples/bundle.pdf')
 })

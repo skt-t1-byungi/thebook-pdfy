@@ -10,12 +10,12 @@ const m = async pathUrl => {
 }
 
 const noop = () => {}
-test.after.always(() => imgs.forEach(img => fs.unlink(img.path, noop)))
+test.after.always(() => imgs.forEach(imgPath => fs.unlink(imgPath, noop)))
 
 test('capturePage', async t => {
     const imgPath = await m('/006962/ch01/01/')
     // t.log(img)
     t.true(fs.existsSync(imgPath))
-    // fs.copyFileSync(img.path, './test.jpg')
+    fs.copyFileSync(imgPath, './examples/capturePage.jpg')
     t.pass()
 })
