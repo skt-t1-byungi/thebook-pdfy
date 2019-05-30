@@ -10,6 +10,7 @@
         "cheerio": "^1.0.0-rc.3",
         "chrome-finder": "^1.0.5",
         "httpie": "^1.1.2",
+        "image-size": "^0.7.4",
         "pdfkit": "^0.9.1",
         "puppeteer-core": "^1.17.0",
         "tempfile": "^3.0.0"
