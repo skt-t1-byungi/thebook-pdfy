@@ -4,6 +4,7 @@ const createBrowserGetter = require('get-puppeteer-browser')
 const puppeteer = require('puppeteer-core')
 const findChrome = require('chrome-finder')
 const createPageCapturer = require('../lib/createPageCapturer')
+const path = require('path')
 
 const getBrowser = createBrowserGetter(puppeteer, { executablePath: findChrome() })
 
@@ -28,7 +29,7 @@ test('capturePage', async t => {
     const res1 = await m('/006884/ch01/')
     t.truthy(res1.nextUrl)
     t.true(fs.existsSync(res1.imgPath))
-    fs.copyFileSync(res1.imgPath, './examples/capturePage.png')
+    fs.copyFileSync(res1.imgPath, path.join(__dirname, 'snapshot/capturePage.png'))
 
     // end page
     const res2 = await m('006884/ch10/08/')

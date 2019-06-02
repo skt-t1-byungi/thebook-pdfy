@@ -13,5 +13,5 @@ test('imgs2pdf', async t => {
     t.false(fs.existsSync(DEST))
     await imgs2pdf(IMGS, DEST)
     t.true(fs.existsSync(DEST))
-    fs.copyFileSync(DEST, './examples/bundle.pdf')
+    fs.copyFileSync(DEST, path.join(__dirname, 'snapshot/bundle.pdf'))
 })
