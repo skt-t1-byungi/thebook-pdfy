@@ -11,6 +11,7 @@
         "chrome-finder": "^1.0.5",
         "get-puppeteer-browser": "^1.0.6",
         "image-size": "^0.7.4",
+        "ora": "^3.4.0",
         "p-limit": "^2.2.0",
         "pdfkit": "^0.9.1",
         "phin": "^3.3.0",
