@@ -26,7 +26,7 @@ test.after.always(() => {
 })
 
 test('capturePage', async t => {
-    const res1 = await m('/006884/ch01/')
+    const res1 = await m('/006993/part02/ch11/01-02/')
     t.truthy(res1.nextUrl)
     t.true(fs.existsSync(res1.imgPath))
     fs.copyFileSync(res1.imgPath, path.join(__dirname, 'snapshot/capturePage.png'))
