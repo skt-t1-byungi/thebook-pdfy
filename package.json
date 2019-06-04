@@ -1,6 +1,6 @@
 {
     "name": "thebook-pdfy",
-    "version": "0.0.1-beta",
+    "version": "0.0.1",
     "main": "lib/index.js",
     "license": "MIT",
     "repository": "https://github.com/skt-t1-byungi/thebook-pdfy.git",
