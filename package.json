@@ -1,7 +1,7 @@
 {
     "name": "thebook-pdfy",
     "description": "더북(thebook.io) 공개책 pdf로 저장하기",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "lib/index.js",
     "license": "MIT",
     "repository": "https://github.com/skt-t1-byungi/thebook-pdfy.git",
