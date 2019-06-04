@@ -3,6 +3,9 @@
     "version": "0.0.0",
     "main": "index.js",
     "license": "MIT",
+    "repository": "https://github.com/skt-t1-byungi/thebook-pdfy.git",
+    "author": "skt-t1-byungi <tiniwz@gmail.com>",
+    "bin": "lib/cli.js",
     "scripts": {
         "test": "ava"
     },
@@ -19,7 +22,8 @@
         "phin": "^3.3.0",
         "prompts": "^2.1.0",
         "puppeteer-core": "^1.17.0",
-        "tempfile": "^3.0.0"
+        "tempfile": "^3.0.0",
+        "unused-filename": "^2.1.0"
     },
     "devDependencies": {
         "ava": "^1.4.1",
