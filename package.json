@@ -1,5 +1,6 @@
 {
     "name": "thebook-pdfy",
+    "description": "더북(thebook.io) 공개책 pdf로 저장하기",
     "version": "0.0.1",
     "main": "lib/index.js",
     "license": "MIT",

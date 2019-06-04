@@ -1,7 +1,7 @@
 # thebook-pdfy
-> 더북(https://thebook.io) 공개책 pdf로 저장하기
+> 더북(thebook.io) 공개책 pdf로 저장하기
 
-![npm](https://badgen.net/npm/v/thebook-pdfy)
+[![npm](https://badgen.net/npm/v/thebook-pdfy)](https://www.npmjs.com/package/thebook-pdfy)
 
 ## Install
 ```sh
