@@ -6,6 +6,9 @@
     "repository": "https://github.com/skt-t1-byungi/thebook-pdfy.git",
     "author": "skt-t1-byungi <tiniwz@gmail.com>",
     "bin": "lib/cli.js",
+    "files": [
+        "lib"
+    ],
     "scripts": {
         "test": "ava"
     },
