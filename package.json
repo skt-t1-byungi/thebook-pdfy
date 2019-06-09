@@ -8,7 +8,7 @@
     "author": "skt-t1-byungi <tiniwz@gmail.com>",
     "bin": "lib/cli.js",
     "engines": {
-        "node": "~11"
+        "node": ">= 11"
     },
     "files": [
         "lib"
