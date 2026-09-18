@@ -21,7 +21,7 @@
         "chrome-finder": "^1.0.5",
         "filenamify": "^4.1.0",
         "get-puppeteer-browser": "^1.1.0",
-        "image-size": "^0.7.4",
+        "image-size": "npm:image-size-next@1.2.2",
         "meow": "^5.0.0",
         "modify-filename": "^1.1.0",
         "ora": "^3.4.0",
